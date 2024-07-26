@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Registration</title>
+    <link rel="stylesheet" href="busticket.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bus Ticket Registration</h1>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="source">Source:</label>
+            <select id="source" name="source" required>
+                <option value="chennai">Chennai</option>
+                <option value="salem">Salem</option>
+                <option value="karaikudi">Karaikudi</option>
+                <option value="tirunelveli">Tirunelveli</option>
+                <option value="thoothukudi">Thoothukudi</option>
+            </select>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="chennai">Chennai</option>
+                <option value="salem">Salem</option>
+                <option value="karaikudi">Karaikudi</option>
+                <option value="tirunelveli">Tirunelveli</option>
+                <option value="thoothukudi">Thoothukudi</option>
+            </select>
+
+            <label for="date">Date of Travel:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </div>
+    <script src="busticket.js"></script>
+</body>
+</html>
